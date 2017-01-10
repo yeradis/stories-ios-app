@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		780D19E21E24131E000DC201 /* StoriesWorkersSpy.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D19E11E24131E000DC201 /* StoriesWorkersSpy.m */; };
+		780D19E51E241437000DC201 /* ListStoriesInteractorSpy.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D19E41E241437000DC201 /* ListStoriesInteractorSpy.m */; };
+		780D19E81E24433F000DC201 /* ListStoriesPresenterSpy.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D19E71E24433F000DC201 /* ListStoriesPresenterSpy.m */; };
+		781520041E224C88007DF1AD /* ListStoriesCellConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78151FF11E224C87007DF1AD /* ListStoriesCellConfigurator.m */; };
+		781520051E224C88007DF1AD /* ListStoriesCellConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78151FF11E224C87007DF1AD /* ListStoriesCellConfigurator.m */; };
+		781520061E224C88007DF1AD /* ListStoriesCellInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78151FF31E224C87007DF1AD /* ListStoriesCellInteractor.m */; };
+		781520071E224C88007DF1AD /* ListStoriesCellInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78151FF31E224C87007DF1AD /* ListStoriesCellInteractor.m */; };
+		781520081E224C88007DF1AD /* ListStoriesCellModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 78151FF61E224C87007DF1AD /* ListStoriesCellModels.m */; };
+		781520091E224C88007DF1AD /* ListStoriesCellModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 78151FF61E224C87007DF1AD /* ListStoriesCellModels.m */; };
+		7815200A1E224C88007DF1AD /* ListStoriesCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78151FF81E224C87007DF1AD /* ListStoriesCellPresenter.m */; };
+		7815200B1E224C88007DF1AD /* ListStoriesCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78151FF81E224C87007DF1AD /* ListStoriesCellPresenter.m */; };
+		781520101E224C88007DF1AD /* ListStoriesCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781520001E224C88007DF1AD /* ListStoriesCellViewController.m */; };
+		781520111E224C88007DF1AD /* ListStoriesCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781520001E224C88007DF1AD /* ListStoriesCellViewController.m */; };
+		781520301E2361AD007DF1AD /* StoriesModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7815202F1E2361AD007DF1AD /* StoriesModelTests.m */; };
+		781520341E23621F007DF1AD /* StoriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 781520331E23621F007DF1AD /* StoriesModel.m */; };
+		781520351E23621F007DF1AD /* StoriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 781520331E23621F007DF1AD /* StoriesModel.m */; };
+		781520371E23639D007DF1AD /* MultimediaModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 781520361E23639D007DF1AD /* MultimediaModelTests.m */; };
+		7815203A1E236620007DF1AD /* AppTestingDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 781520391E236620007DF1AD /* AppTestingDelegate.m */; };
+		7815203C1E236A1E007DF1AD /* StoryModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7815203B1E236A1E007DF1AD /* StoryModelTest.m */; };
+		7850D65A1E1A852B00BEA52D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6591E1A852B00BEA52D /* main.m */; };
+		7850D65D1E1A852B00BEA52D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D65C1E1A852B00BEA52D /* AppDelegate.m */; };
+		7850D6631E1A852B00BEA52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7850D6611E1A852B00BEA52D /* Main.storyboard */; };
+		7850D6651E1A852B00BEA52D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7850D6641E1A852B00BEA52D /* Assets.xcassets */; };
+		7850D6681E1A852B00BEA52D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7850D6661E1A852B00BEA52D /* LaunchScreen.storyboard */; };
+		7850D6841E1A85F800BEA52D /* StoriesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6831E1A85F700BEA52D /* StoriesAPI.m */; };
+		7850D6851E1A85F800BEA52D /* StoriesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6831E1A85F700BEA52D /* StoriesAPI.m */; };
+		7850D6FC1E1ADB8000BEA52D /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6FB1E1ADB8000BEA52D /* Story.m */; };
+		7850D6FD1E1ADB8000BEA52D /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6FB1E1ADB8000BEA52D /* Story.m */; };
+		7850D6FF1E1ADF8C00BEA52D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */; };
+		7850D7001E1ADF8C00BEA52D /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78A6E3C11E21332E00A5A34B /* StoriesAPIIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3C01E21332E00A5A34B /* StoriesAPIIntegrationTests.m */; };
+		78A6E3CB1E21468700A5A34B /* StoriesWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3CA1E21468700A5A34B /* StoriesWorker.m */; };
+		78A6E3CC1E21468700A5A34B /* StoriesWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3CA1E21468700A5A34B /* StoriesWorker.m */; };
+		78A6E3DE1E21584F00A5A34B /* StoriesAPIUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3DD1E21584F00A5A34B /* StoriesAPIUtilsTests.m */; };
+		78A6E3E11E215CC400A5A34B /* StoriesWorkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3E01E215CC400A5A34B /* StoriesWorkerTests.m */; };
+		78A6E3EB1E2170E700A5A34B /* ListStoriesCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A6E3E81E2170E700A5A34B /* ListStoriesCellViewController.xib */; };
+		78A6E3EC1E2170E700A5A34B /* ListStoriesCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A6E3E81E2170E700A5A34B /* ListStoriesCellViewController.xib */; };
+		78A6E4401E22262900A5A34B /* StoryWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E43F1E22262900A5A34B /* StoryWorker.m */; };
+		78A6E4411E22262900A5A34B /* StoryWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E43F1E22262900A5A34B /* StoryWorker.m */; };
+		78A6E4471E2229F500A5A34B /* StoryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E4461E2229F500A5A34B /* StoryAPI.m */; };
+		78A6E4481E2229F500A5A34B /* StoryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E4461E2229F500A5A34B /* StoryAPI.m */; };
+		78C8BEEF1E1D76BD0085357B /* ListStoriesConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEDC1E1D76BD0085357B /* ListStoriesConfigurator.m */; };
+		78C8BEF01E1D76BD0085357B /* ListStoriesConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEDC1E1D76BD0085357B /* ListStoriesConfigurator.m */; };
+		78C8BEF11E1D76BD0085357B /* ListStoriesInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEDE1E1D76BD0085357B /* ListStoriesInteractor.m */; };
+		78C8BEF21E1D76BD0085357B /* ListStoriesInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEDE1E1D76BD0085357B /* ListStoriesInteractor.m */; };
+		78C8BEF31E1D76BD0085357B /* ListStoriesModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEE11E1D76BD0085357B /* ListStoriesModels.m */; };
+		78C8BEF41E1D76BD0085357B /* ListStoriesModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEE11E1D76BD0085357B /* ListStoriesModels.m */; };
+		78C8BEF51E1D76BD0085357B /* ListStoriesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEE31E1D76BD0085357B /* ListStoriesPresenter.m */; };
+		78C8BEF61E1D76BD0085357B /* ListStoriesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEE31E1D76BD0085357B /* ListStoriesPresenter.m */; };
+		78C8BEF71E1D76BD0085357B /* ListStoriesRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEE61E1D76BD0085357B /* ListStoriesRouter.m */; };
+		78C8BEF81E1D76BD0085357B /* ListStoriesRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEE61E1D76BD0085357B /* ListStoriesRouter.m */; };
+		78C8BEF91E1D76BD0085357B /* ListStoriesViewController+Routing.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEE91E1D76BD0085357B /* ListStoriesViewController+Routing.m */; };
+		78C8BEFA1E1D76BD0085357B /* ListStoriesViewController+Routing.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEE91E1D76BD0085357B /* ListStoriesViewController+Routing.m */; };
+		78C8BEFB1E1D76BD0085357B /* ListStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEEB1E1D76BD0085357B /* ListStoriesViewController.m */; };
+		78C8BEFC1E1D76BD0085357B /* ListStoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BEEB1E1D76BD0085357B /* ListStoriesViewController.m */; };
+		78C8BF131E1D77680085357B /* ListStoriesInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BF0E1E1D77680085357B /* ListStoriesInteractorTests.m */; };
+		78C8BF151E1D77680085357B /* ListStoriesPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BF0F1E1D77680085357B /* ListStoriesPresenterTests.m */; };
+		78C8BF171E1D77680085357B /* ListStoriesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BF101E1D77680085357B /* ListStoriesViewControllerTests.m */; };
+		78C8BF1D1E1D912E0085357B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7850D66F1E1A852B00BEA52D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7850D64D1E1A852B00BEA52D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7850D6541E1A852B00BEA52D;
+			remoteInfo = Stories;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7850D7011E1ADF8C00BEA52D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7850D7001E1ADF8C00BEA52D /* AFNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		780D19E01E24131E000DC201 /* StoriesWorkersSpy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoriesWorkersSpy.h; path = Scenes/ListStories/Helpers/StoriesWorkersSpy.h; sourceTree = "<group>"; };
+		780D19E11E24131E000DC201 /* StoriesWorkersSpy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriesWorkersSpy.m; path = Scenes/ListStories/Helpers/StoriesWorkersSpy.m; sourceTree = "<group>"; };
+		780D19E31E241437000DC201 /* ListStoriesInteractorSpy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesInteractorSpy.h; path = Scenes/ListStories/Helpers/ListStoriesInteractorSpy.h; sourceTree = "<group>"; };
+		780D19E41E241437000DC201 /* ListStoriesInteractorSpy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesInteractorSpy.m; path = Scenes/ListStories/Helpers/ListStoriesInteractorSpy.m; sourceTree = "<group>"; };
+		780D19E61E24433F000DC201 /* ListStoriesPresenterSpy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesPresenterSpy.h; path = Scenes/ListStories/Helpers/ListStoriesPresenterSpy.h; sourceTree = "<group>"; };
+		780D19E71E24433F000DC201 /* ListStoriesPresenterSpy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesPresenterSpy.m; path = Scenes/ListStories/Helpers/ListStoriesPresenterSpy.m; sourceTree = "<group>"; };
+		78151FEF1E224C87007DF1AD /* ListStoriesCellCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellCommon.h; path = Scenes/ListStoriesCell/ListStoriesCellCommon.h; sourceTree = "<group>"; };
+		78151FF01E224C87007DF1AD /* ListStoriesCellConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellConfigurator.h; path = Scenes/ListStoriesCell/ListStoriesCellConfigurator.h; sourceTree = "<group>"; };
+		78151FF11E224C87007DF1AD /* ListStoriesCellConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesCellConfigurator.m; path = Scenes/ListStoriesCell/ListStoriesCellConfigurator.m; sourceTree = "<group>"; };
+		78151FF21E224C87007DF1AD /* ListStoriesCellInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellInteractor.h; path = Scenes/ListStoriesCell/ListStoriesCellInteractor.h; sourceTree = "<group>"; };
+		78151FF31E224C87007DF1AD /* ListStoriesCellInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesCellInteractor.m; path = Scenes/ListStoriesCell/ListStoriesCellInteractor.m; sourceTree = "<group>"; };
+		78151FF41E224C87007DF1AD /* ListStoriesCellInteractorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellInteractorInterface.h; path = Scenes/ListStoriesCell/ListStoriesCellInteractorInterface.h; sourceTree = "<group>"; };
+		78151FF51E224C87007DF1AD /* ListStoriesCellModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellModels.h; path = Scenes/ListStoriesCell/ListStoriesCellModels.h; sourceTree = "<group>"; };
+		78151FF61E224C87007DF1AD /* ListStoriesCellModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesCellModels.m; path = Scenes/ListStoriesCell/ListStoriesCellModels.m; sourceTree = "<group>"; };
+		78151FF71E224C87007DF1AD /* ListStoriesCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellPresenter.h; path = Scenes/ListStoriesCell/ListStoriesCellPresenter.h; sourceTree = "<group>"; };
+		78151FF81E224C87007DF1AD /* ListStoriesCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesCellPresenter.m; path = Scenes/ListStoriesCell/ListStoriesCellPresenter.m; sourceTree = "<group>"; };
+		78151FF91E224C87007DF1AD /* ListStoriesCellPresenterInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellPresenterInterface.h; path = Scenes/ListStoriesCell/ListStoriesCellPresenterInterface.h; sourceTree = "<group>"; };
+		78151FFF1E224C88007DF1AD /* ListStoriesCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellViewController.h; path = Scenes/ListStoriesCell/ListStoriesCellViewController.h; sourceTree = "<group>"; };
+		781520001E224C88007DF1AD /* ListStoriesCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesCellViewController.m; path = Scenes/ListStoriesCell/ListStoriesCellViewController.m; sourceTree = "<group>"; };
+		781520011E224C88007DF1AD /* ListStoriesCellViewControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellViewControllerInterface.h; path = Scenes/ListStoriesCell/ListStoriesCellViewControllerInterface.h; sourceTree = "<group>"; };
+		781520221E229297007DF1AD /* JSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONModel.framework; path = Carthage/Build/iOS/JSONModel.framework; sourceTree = "<group>"; };
+		7815202F1E2361AD007DF1AD /* StoriesModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriesModelTests.m; path = Models/StoriesModelTests.m; sourceTree = "<group>"; };
+		781520321E23621F007DF1AD /* StoriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesModel.h; sourceTree = "<group>"; };
+		781520331E23621F007DF1AD /* StoriesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesModel.m; sourceTree = "<group>"; };
+		781520361E23639D007DF1AD /* MultimediaModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultimediaModelTests.m; path = Models/MultimediaModelTests.m; sourceTree = "<group>"; };
+		781520381E236620007DF1AD /* AppTestingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTestingDelegate.h; sourceTree = "<group>"; };
+		781520391E236620007DF1AD /* AppTestingDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTestingDelegate.m; sourceTree = "<group>"; };
+		7815203B1E236A1E007DF1AD /* StoryModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryModelTest.m; path = Models/StoryModelTest.m; sourceTree = "<group>"; };
+		7850D6551E1A852B00BEA52D /* Stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7850D6591E1A852B00BEA52D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7850D65B1E1A852B00BEA52D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7850D65C1E1A852B00BEA52D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7850D6621E1A852B00BEA52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7850D6641E1A852B00BEA52D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7850D6671E1A852B00BEA52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7850D6691E1A852B00BEA52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7850D66E1E1A852B00BEA52D /* StoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7850D6741E1A852B00BEA52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7850D6821E1A85F700BEA52D /* StoriesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoriesAPI.h; path = Services/StoriesAPI.h; sourceTree = "<group>"; };
+		7850D6831E1A85F700BEA52D /* StoriesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriesAPI.m; path = Services/StoriesAPI.m; sourceTree = "<group>"; };
+		7850D6FA1E1ADB8000BEA52D /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Story.h; path = Models/Story.h; sourceTree = "<group>"; };
+		7850D6FB1E1ADB8000BEA52D /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Story.m; path = Models/Story.m; sourceTree = "<group>"; };
+		7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		78A6E3C01E21332E00A5A34B /* StoriesAPIIntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesAPIIntegrationTests.m; sourceTree = "<group>"; };
+		78A6E3C91E21468700A5A34B /* StoriesWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoriesWorker.h; path = Workers/StoriesWorker.h; sourceTree = "<group>"; };
+		78A6E3CA1E21468700A5A34B /* StoriesWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriesWorker.m; path = Workers/StoriesWorker.m; sourceTree = "<group>"; };
+		78A6E3CD1E2147AF00A5A34B /* StoriesProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StoriesProtocol.h; path = Workers/StoriesProtocol.h; sourceTree = "<group>"; };
+		78A6E3DD1E21584F00A5A34B /* StoriesAPIUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesAPIUtilsTests.m; sourceTree = "<group>"; };
+		78A6E3E01E215CC400A5A34B /* StoriesWorkerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesWorkerTests.m; sourceTree = "<group>"; };
+		78A6E3E81E2170E700A5A34B /* ListStoriesCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListStoriesCellViewController.xib; path = Cells/ListStoriesCellViewController.xib; sourceTree = "<group>"; };
+		78A6E43E1E22262900A5A34B /* StoryWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryWorker.h; path = Workers/StoryWorker.h; sourceTree = "<group>"; };
+		78A6E43F1E22262900A5A34B /* StoryWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryWorker.m; path = Workers/StoryWorker.m; sourceTree = "<group>"; };
+		78A6E4441E22286C00A5A34B /* StoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryProtocol.h; path = Workers/StoryProtocol.h; sourceTree = "<group>"; };
+		78A6E4451E2229F500A5A34B /* StoryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryAPI.h; path = Services/StoryAPI.h; sourceTree = "<group>"; };
+		78A6E4461E2229F500A5A34B /* StoryAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryAPI.m; path = Services/StoryAPI.m; sourceTree = "<group>"; };
+		78A6E4761E22438400A5A34B /* StoryModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StoryModelProtocol.h; path = Models/StoryModelProtocol.h; sourceTree = "<group>"; };
+		78C8BEDA1E1D76BC0085357B /* ListStoriesCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCommon.h; path = Scenes/ListStoriesCommon.h; sourceTree = "<group>"; };
+		78C8BEDB1E1D76BD0085357B /* ListStoriesConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesConfigurator.h; path = Scenes/ListStoriesConfigurator.h; sourceTree = "<group>"; };
+		78C8BEDC1E1D76BD0085357B /* ListStoriesConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesConfigurator.m; path = Scenes/ListStoriesConfigurator.m; sourceTree = "<group>"; };
+		78C8BEDD1E1D76BD0085357B /* ListStoriesInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesInteractor.h; path = Scenes/ListStoriesInteractor.h; sourceTree = "<group>"; };
+		78C8BEDE1E1D76BD0085357B /* ListStoriesInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesInteractor.m; path = Scenes/ListStoriesInteractor.m; sourceTree = "<group>"; };
+		78C8BEDF1E1D76BD0085357B /* ListStoriesInteractorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesInteractorInterface.h; path = Scenes/ListStoriesInteractorInterface.h; sourceTree = "<group>"; };
+		78C8BEE01E1D76BD0085357B /* ListStoriesModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesModels.h; path = Scenes/ListStoriesModels.h; sourceTree = "<group>"; };
+		78C8BEE11E1D76BD0085357B /* ListStoriesModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesModels.m; path = Scenes/ListStoriesModels.m; sourceTree = "<group>"; };
+		78C8BEE21E1D76BD0085357B /* ListStoriesPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesPresenter.h; path = Scenes/ListStoriesPresenter.h; sourceTree = "<group>"; };
+		78C8BEE31E1D76BD0085357B /* ListStoriesPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesPresenter.m; path = Scenes/ListStoriesPresenter.m; sourceTree = "<group>"; };
+		78C8BEE41E1D76BD0085357B /* ListStoriesPresenterInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesPresenterInterface.h; path = Scenes/ListStoriesPresenterInterface.h; sourceTree = "<group>"; };
+		78C8BEE51E1D76BD0085357B /* ListStoriesRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesRouter.h; path = Scenes/ListStoriesRouter.h; sourceTree = "<group>"; };
+		78C8BEE61E1D76BD0085357B /* ListStoriesRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesRouter.m; path = Scenes/ListStoriesRouter.m; sourceTree = "<group>"; };
+		78C8BEE71E1D76BD0085357B /* ListStoriesRouterInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesRouterInterface.h; path = Scenes/ListStoriesRouterInterface.h; sourceTree = "<group>"; };
+		78C8BEE81E1D76BD0085357B /* ListStoriesViewController+Routing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ListStoriesViewController+Routing.h"; path = "Scenes/ListStoriesViewController+Routing.h"; sourceTree = "<group>"; };
+		78C8BEE91E1D76BD0085357B /* ListStoriesViewController+Routing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ListStoriesViewController+Routing.m"; path = "Scenes/ListStoriesViewController+Routing.m"; sourceTree = "<group>"; };
+		78C8BEEA1E1D76BD0085357B /* ListStoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesViewController.h; path = Scenes/ListStoriesViewController.h; sourceTree = "<group>"; };
+		78C8BEEB1E1D76BD0085357B /* ListStoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesViewController.m; path = Scenes/ListStoriesViewController.m; sourceTree = "<group>"; };
+		78C8BEEC1E1D76BD0085357B /* ListStoriesViewControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesViewControllerInterface.h; path = Scenes/ListStoriesViewControllerInterface.h; sourceTree = "<group>"; };
+		78C8BF0E1E1D77680085357B /* ListStoriesInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesInteractorTests.m; path = Scenes/ListStories/ListStoriesInteractorTests.m; sourceTree = "<group>"; };
+		78C8BF0F1E1D77680085357B /* ListStoriesPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesPresenterTests.m; path = Scenes/ListStories/ListStoriesPresenterTests.m; sourceTree = "<group>"; };
+		78C8BF101E1D77680085357B /* ListStoriesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesViewControllerTests.m; path = Scenes/ListStories/ListStoriesViewControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7850D6521E1A852B00BEA52D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7850D6FF1E1ADF8C00BEA52D /* AFNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7850D66B1E1A852B00BEA52D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C8BF1D1E1D912E0085357B /* AFNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		780D19DF1E2412CE000DC201 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				780D19E01E24131E000DC201 /* StoriesWorkersSpy.h */,
+				780D19E11E24131E000DC201 /* StoriesWorkersSpy.m */,
+				780D19E31E241437000DC201 /* ListStoriesInteractorSpy.h */,
+				780D19E41E241437000DC201 /* ListStoriesInteractorSpy.m */,
+				780D19E61E24433F000DC201 /* ListStoriesPresenterSpy.h */,
+				780D19E71E24433F000DC201 /* ListStoriesPresenterSpy.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		7815202D1E236161007DF1AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7815202E1E23616C007DF1AD /* JSONParsing */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7815202E1E23616C007DF1AD /* JSONParsing */ = {
+			isa = PBXGroup;
+			children = (
+				7815202F1E2361AD007DF1AD /* StoriesModelTests.m */,
+				781520361E23639D007DF1AD /* MultimediaModelTests.m */,
+				7815203B1E236A1E007DF1AD /* StoryModelTest.m */,
+			);
+			name = JSONParsing;
+			sourceTree = "<group>";
+		};
+		781520311E23621F007DF1AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				781520321E23621F007DF1AD /* StoriesModel.h */,
+				781520331E23621F007DF1AD /* StoriesModel.m */,
+			);
+			name = Models;
+			path = Services/Models;
+			sourceTree = "<group>";
+		};
+		7850D64C1E1A852B00BEA52D = {
+			isa = PBXGroup;
+			children = (
+				7850D6571E1A852B00BEA52D /* Stories */,
+				7850D6711E1A852B00BEA52D /* StoriesTests */,
+				7850D6561E1A852B00BEA52D /* Products */,
+				7850D7021E1ADF9E00BEA52D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7850D6561E1A852B00BEA52D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7850D6551E1A852B00BEA52D /* Stories.app */,
+				7850D66E1E1A852B00BEA52D /* StoriesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7850D6571E1A852B00BEA52D /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				78A6E3C81E21465900A5A34B /* Workers */,
+				78C8BED81E1D75E80085357B /* Scenes */,
+				7850D6811E1A85BC00BEA52D /* Services */,
+				7850D67D1E1A855F00BEA52D /* Models */,
+				7850D65B1E1A852B00BEA52D /* AppDelegate.h */,
+				7850D65C1E1A852B00BEA52D /* AppDelegate.m */,
+				781520381E236620007DF1AD /* AppTestingDelegate.h */,
+				781520391E236620007DF1AD /* AppTestingDelegate.m */,
+				7850D6611E1A852B00BEA52D /* Main.storyboard */,
+				7850D6641E1A852B00BEA52D /* Assets.xcassets */,
+				7850D6661E1A852B00BEA52D /* LaunchScreen.storyboard */,
+				7850D6691E1A852B00BEA52D /* Info.plist */,
+				7850D6581E1A852B00BEA52D /* Supporting Files */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		7850D6581E1A852B00BEA52D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7850D6591E1A852B00BEA52D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7850D6711E1A852B00BEA52D /* StoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				7815202D1E236161007DF1AD /* Models */,
+				78A6E3DF1E215BBE00A5A34B /* StoriesAPI */,
+				78C8BEFF1E1D76C90085357B /* Scenes */,
+				7850D6741E1A852B00BEA52D /* Info.plist */,
+				78A6E3E01E215CC400A5A34B /* StoriesWorkerTests.m */,
+			);
+			path = StoriesTests;
+			sourceTree = "<group>";
+		};
+		7850D67D1E1A855F00BEA52D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7850D6FA1E1ADB8000BEA52D /* Story.h */,
+				7850D6FB1E1ADB8000BEA52D /* Story.m */,
+				78A6E4761E22438400A5A34B /* StoryModelProtocol.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7850D6811E1A85BC00BEA52D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				781520311E23621F007DF1AD /* Models */,
+				7850D6821E1A85F700BEA52D /* StoriesAPI.h */,
+				7850D6831E1A85F700BEA52D /* StoriesAPI.m */,
+				78A6E4451E2229F500A5A34B /* StoryAPI.h */,
+				78A6E4461E2229F500A5A34B /* StoryAPI.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		7850D7021E1ADF9E00BEA52D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				781520221E229297007DF1AD /* JSONModel.framework */,
+				7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78A6E3C81E21465900A5A34B /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				78A6E4431E22263400A5A34B /* Stories */,
+				78A6E4421E22262D00A5A34B /* Story */,
+			);
+			name = Workers;
+			sourceTree = "<group>";
+		};
+		78A6E3DF1E215BBE00A5A34B /* StoriesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				78A6E3C01E21332E00A5A34B /* StoriesAPIIntegrationTests.m */,
+				78A6E3DD1E21584F00A5A34B /* StoriesAPIUtilsTests.m */,
+			);
+			name = StoriesAPI;
+			sourceTree = "<group>";
+		};
+		78A6E4421E22262D00A5A34B /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				78A6E43E1E22262900A5A34B /* StoryWorker.h */,
+				78A6E43F1E22262900A5A34B /* StoryWorker.m */,
+				78A6E4441E22286C00A5A34B /* StoryProtocol.h */,
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
+		78A6E4431E22263400A5A34B /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				78A6E3C91E21468700A5A34B /* StoriesWorker.h */,
+				78A6E3CA1E21468700A5A34B /* StoriesWorker.m */,
+				78A6E3CD1E2147AF00A5A34B /* StoriesProtocol.h */,
+			);
+			name = Stories;
+			sourceTree = "<group>";
+		};
+		78A6E44D1E222DC400A5A34B /* ListStoriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				78A6E3E81E2170E700A5A34B /* ListStoriesCellViewController.xib */,
+				78151FEF1E224C87007DF1AD /* ListStoriesCellCommon.h */,
+				78151FF01E224C87007DF1AD /* ListStoriesCellConfigurator.h */,
+				78151FF11E224C87007DF1AD /* ListStoriesCellConfigurator.m */,
+				78151FF21E224C87007DF1AD /* ListStoriesCellInteractor.h */,
+				78151FF31E224C87007DF1AD /* ListStoriesCellInteractor.m */,
+				78151FF41E224C87007DF1AD /* ListStoriesCellInteractorInterface.h */,
+				78151FF51E224C87007DF1AD /* ListStoriesCellModels.h */,
+				78151FF61E224C87007DF1AD /* ListStoriesCellModels.m */,
+				78151FF71E224C87007DF1AD /* ListStoriesCellPresenter.h */,
+				78151FF81E224C87007DF1AD /* ListStoriesCellPresenter.m */,
+				78151FF91E224C87007DF1AD /* ListStoriesCellPresenterInterface.h */,
+				78151FFF1E224C88007DF1AD /* ListStoriesCellViewController.h */,
+				781520001E224C88007DF1AD /* ListStoriesCellViewController.m */,
+				781520011E224C88007DF1AD /* ListStoriesCellViewControllerInterface.h */,
+			);
+			name = ListStoriesCell;
+			sourceTree = "<group>";
+		};
+		78C8BED81E1D75E80085357B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				78A6E44D1E222DC400A5A34B /* ListStoriesCell */,
+				78C8BED91E1D76030085357B /* ListStories */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		78C8BED91E1D76030085357B /* ListStories */ = {
+			isa = PBXGroup;
+			children = (
+				78C8BEDA1E1D76BC0085357B /* ListStoriesCommon.h */,
+				78C8BEDB1E1D76BD0085357B /* ListStoriesConfigurator.h */,
+				78C8BEDC1E1D76BD0085357B /* ListStoriesConfigurator.m */,
+				78C8BEDD1E1D76BD0085357B /* ListStoriesInteractor.h */,
+				78C8BEDE1E1D76BD0085357B /* ListStoriesInteractor.m */,
+				78C8BEDF1E1D76BD0085357B /* ListStoriesInteractorInterface.h */,
+				78C8BEE01E1D76BD0085357B /* ListStoriesModels.h */,
+				78C8BEE11E1D76BD0085357B /* ListStoriesModels.m */,
+				78C8BEE21E1D76BD0085357B /* ListStoriesPresenter.h */,
+				78C8BEE31E1D76BD0085357B /* ListStoriesPresenter.m */,
+				78C8BEE41E1D76BD0085357B /* ListStoriesPresenterInterface.h */,
+				78C8BEE51E1D76BD0085357B /* ListStoriesRouter.h */,
+				78C8BEE61E1D76BD0085357B /* ListStoriesRouter.m */,
+				78C8BEE71E1D76BD0085357B /* ListStoriesRouterInterface.h */,
+				78C8BEE81E1D76BD0085357B /* ListStoriesViewController+Routing.h */,
+				78C8BEE91E1D76BD0085357B /* ListStoriesViewController+Routing.m */,
+				78C8BEEA1E1D76BD0085357B /* ListStoriesViewController.h */,
+				78C8BEEB1E1D76BD0085357B /* ListStoriesViewController.m */,
+				78C8BEEC1E1D76BD0085357B /* ListStoriesViewControllerInterface.h */,
+			);
+			name = ListStories;
+			sourceTree = "<group>";
+		};
+		78C8BEFF1E1D76C90085357B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				78C8BF001E1D76E20085357B /* ListStories */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		78C8BF001E1D76E20085357B /* ListStories */ = {
+			isa = PBXGroup;
+			children = (
+				780D19DF1E2412CE000DC201 /* Helpers */,
+				78C8BF0E1E1D77680085357B /* ListStoriesInteractorTests.m */,
+				78C8BF0F1E1D77680085357B /* ListStoriesPresenterTests.m */,
+				78C8BF101E1D77680085357B /* ListStoriesViewControllerTests.m */,
+			);
+			name = ListStories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7850D6541E1A852B00BEA52D /* Stories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7850D6771E1A852B00BEA52D /* Build configuration list for PBXNativeTarget "Stories" */;
+			buildPhases = (
+				7850D6511E1A852B00BEA52D /* Sources */,
+				7850D6521E1A852B00BEA52D /* Frameworks */,
+				7850D6531E1A852B00BEA52D /* Resources */,
+				7850D7011E1ADF8C00BEA52D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stories;
+			productName = Stories;
+			productReference = 7850D6551E1A852B00BEA52D /* Stories.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7850D66D1E1A852B00BEA52D /* StoriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7850D67A1E1A852B00BEA52D /* Build configuration list for PBXNativeTarget "StoriesTests" */;
+			buildPhases = (
+				7850D66A1E1A852B00BEA52D /* Sources */,
+				7850D66B1E1A852B00BEA52D /* Frameworks */,
+				7850D66C1E1A852B00BEA52D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7850D6701E1A852B00BEA52D /* PBXTargetDependency */,
+			);
+			name = StoriesTests;
+			productName = StoriesTests;
+			productReference = 7850D66E1E1A852B00BEA52D /* StoriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7850D64D1E1A852B00BEA52D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = yeradis;
+				TargetAttributes = {
+					7850D6541E1A852B00BEA52D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HGX8T65WV9;
+						ProvisioningStyle = Automatic;
+					};
+					7850D66D1E1A852B00BEA52D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HGX8T65WV9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7850D6541E1A852B00BEA52D;
+					};
+				};
+			};
+			buildConfigurationList = 7850D6501E1A852B00BEA52D /* Build configuration list for PBXProject "Stories" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7850D64C1E1A852B00BEA52D;
+			productRefGroup = 7850D6561E1A852B00BEA52D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7850D6541E1A852B00BEA52D /* Stories */,
+				7850D66D1E1A852B00BEA52D /* StoriesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7850D6531E1A852B00BEA52D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A6E3EB1E2170E700A5A34B /* ListStoriesCellViewController.xib in Resources */,
+				7850D6681E1A852B00BEA52D /* LaunchScreen.storyboard in Resources */,
+				7850D6651E1A852B00BEA52D /* Assets.xcassets in Resources */,
+				7850D6631E1A852B00BEA52D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7850D66C1E1A852B00BEA52D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A6E3EC1E2170E700A5A34B /* ListStoriesCellViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7850D6511E1A852B00BEA52D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7815200A1E224C88007DF1AD /* ListStoriesCellPresenter.m in Sources */,
+				781520041E224C88007DF1AD /* ListStoriesCellConfigurator.m in Sources */,
+				78A6E4471E2229F500A5A34B /* StoryAPI.m in Sources */,
+				78C8BEEF1E1D76BD0085357B /* ListStoriesConfigurator.m in Sources */,
+				7850D65D1E1A852B00BEA52D /* AppDelegate.m in Sources */,
+				78A6E4401E22262900A5A34B /* StoryWorker.m in Sources */,
+				7850D6841E1A85F800BEA52D /* StoriesAPI.m in Sources */,
+				78C8BEF11E1D76BD0085357B /* ListStoriesInteractor.m in Sources */,
+				7850D6FC1E1ADB8000BEA52D /* Story.m in Sources */,
+				78C8BEF91E1D76BD0085357B /* ListStoriesViewController+Routing.m in Sources */,
+				7850D65A1E1A852B00BEA52D /* main.m in Sources */,
+				781520341E23621F007DF1AD /* StoriesModel.m in Sources */,
+				781520101E224C88007DF1AD /* ListStoriesCellViewController.m in Sources */,
+				78C8BEF51E1D76BD0085357B /* ListStoriesPresenter.m in Sources */,
+				78C8BEF71E1D76BD0085357B /* ListStoriesRouter.m in Sources */,
+				781520081E224C88007DF1AD /* ListStoriesCellModels.m in Sources */,
+				78A6E3CB1E21468700A5A34B /* StoriesWorker.m in Sources */,
+				781520061E224C88007DF1AD /* ListStoriesCellInteractor.m in Sources */,
+				78C8BEFB1E1D76BD0085357B /* ListStoriesViewController.m in Sources */,
+				78C8BEF31E1D76BD0085357B /* ListStoriesModels.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7850D66A1E1A852B00BEA52D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7815203A1E236620007DF1AD /* AppTestingDelegate.m in Sources */,
+				781520091E224C88007DF1AD /* ListStoriesCellModels.m in Sources */,
+				78A6E3E11E215CC400A5A34B /* StoriesWorkerTests.m in Sources */,
+				78C8BEFA1E1D76BD0085357B /* ListStoriesViewController+Routing.m in Sources */,
+				780D19E81E24433F000DC201 /* ListStoriesPresenterSpy.m in Sources */,
+				781520351E23621F007DF1AD /* StoriesModel.m in Sources */,
+				78A6E3C11E21332E00A5A34B /* StoriesAPIIntegrationTests.m in Sources */,
+				781520051E224C88007DF1AD /* ListStoriesCellConfigurator.m in Sources */,
+				78C8BEF61E1D76BD0085357B /* ListStoriesPresenter.m in Sources */,
+				78A6E4411E22262900A5A34B /* StoryWorker.m in Sources */,
+				781520111E224C88007DF1AD /* ListStoriesCellViewController.m in Sources */,
+				78C8BEFC1E1D76BD0085357B /* ListStoriesViewController.m in Sources */,
+				78C8BEF01E1D76BD0085357B /* ListStoriesConfigurator.m in Sources */,
+				780D19E51E241437000DC201 /* ListStoriesInteractorSpy.m in Sources */,
+				78A6E3DE1E21584F00A5A34B /* StoriesAPIUtilsTests.m in Sources */,
+				780D19E21E24131E000DC201 /* StoriesWorkersSpy.m in Sources */,
+				78C8BF171E1D77680085357B /* ListStoriesViewControllerTests.m in Sources */,
+				781520301E2361AD007DF1AD /* StoriesModelTests.m in Sources */,
+				7850D6FD1E1ADB8000BEA52D /* Story.m in Sources */,
+				781520071E224C88007DF1AD /* ListStoriesCellInteractor.m in Sources */,
+				7815200B1E224C88007DF1AD /* ListStoriesCellPresenter.m in Sources */,
+				78A6E4481E2229F500A5A34B /* StoryAPI.m in Sources */,
+				78C8BF151E1D77680085357B /* ListStoriesPresenterTests.m in Sources */,
+				7850D6851E1A85F800BEA52D /* StoriesAPI.m in Sources */,
+				78C8BEF81E1D76BD0085357B /* ListStoriesRouter.m in Sources */,
+				78C8BEF41E1D76BD0085357B /* ListStoriesModels.m in Sources */,
+				781520371E23639D007DF1AD /* MultimediaModelTests.m in Sources */,
+				78A6E3CC1E21468700A5A34B /* StoriesWorker.m in Sources */,
+				7815203C1E236A1E007DF1AD /* StoryModelTest.m in Sources */,
+				78C8BEF21E1D76BD0085357B /* ListStoriesInteractor.m in Sources */,
+				78C8BF131E1D77680085357B /* ListStoriesInteractorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7850D6701E1A852B00BEA52D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7850D6541E1A852B00BEA52D /* Stories */;
+			targetProxy = 7850D66F1E1A852B00BEA52D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7850D6611E1A852B00BEA52D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7850D6621E1A852B00BEA52D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7850D6661E1A852B00BEA52D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7850D6671E1A852B00BEA52D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7850D6751E1A852B00BEA52D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7850D6761E1A852B00BEA52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7850D6781E1A852B00BEA52D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HGX8T65WV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Stories/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeradis.garage.mobile.Stories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7850D6791E1A852B00BEA52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HGX8T65WV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Stories/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeradis.garage.mobile.Stories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7850D67B1E1A852B00BEA52D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HGX8T65WV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = StoriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeradis.garage.mobile.StoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stories.app/Stories";
+			};
+			name = Debug;
+		};
+		7850D67C1E1A852B00BEA52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HGX8T65WV9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = StoriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeradis.garage.mobile.StoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stories.app/Stories";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7850D6501E1A852B00BEA52D /* Build configuration list for PBXProject "Stories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7850D6751E1A852B00BEA52D /* Debug */,
+				7850D6761E1A852B00BEA52D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7850D6771E1A852B00BEA52D /* Build configuration list for PBXNativeTarget "Stories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7850D6781E1A852B00BEA52D /* Debug */,
+				7850D6791E1A852B00BEA52D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7850D67A1E1A852B00BEA52D /* Build configuration list for PBXNativeTarget "StoriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7850D67B1E1A852B00BEA52D /* Debug */,
+				7850D67C1E1A852B00BEA52D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7850D64D1E1A852B00BEA52D /* Project object */;
+}
