@@ -1,1 +1,4 @@
 github "AFNetworking/AFNetworking" "3.1.0"
+github "hamcrest/OCHamcrest" "v6.0.0"
+github "erikdoe/ocmock" "v3.4"
+github "jonreid/OCMockito" "v4.0.1"
