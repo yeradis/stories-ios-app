@@ -26,6 +26,7 @@
 		781520371E23639D007DF1AD /* MultimediaModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 781520361E23639D007DF1AD /* MultimediaModelTests.m */; };
 		7815203A1E236620007DF1AD /* AppTestingDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 781520391E236620007DF1AD /* AppTestingDelegate.m */; };
 		7815203C1E236A1E007DF1AD /* StoryModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7815203B1E236A1E007DF1AD /* StoryModelTest.m */; };
+		7826840F1E3883B900902E22 /* stories.json in Resources */ = {isa = PBXBuildFile; fileRef = 7826840E1E3883B900902E22 /* stories.json */; };
 		7850D65A1E1A852B00BEA52D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6591E1A852B00BEA52D /* main.m */; };
 		7850D65D1E1A852B00BEA52D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D65C1E1A852B00BEA52D /* AppDelegate.m */; };
 		7850D6631E1A852B00BEA52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7850D6611E1A852B00BEA52D /* Main.storyboard */; };
@@ -35,13 +36,10 @@
 		7850D6851E1A85F800BEA52D /* StoriesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6831E1A85F700BEA52D /* StoriesAPI.m */; };
 		7850D6FC1E1ADB8000BEA52D /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6FB1E1ADB8000BEA52D /* Story.m */; };
 		7850D6FD1E1ADB8000BEA52D /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 7850D6FB1E1ADB8000BEA52D /* Story.m */; };
-		7850D6FF1E1ADF8C00BEA52D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */; };
-		7850D7001E1ADF8C00BEA52D /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78A6E3C11E21332E00A5A34B /* StoriesAPIIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3C01E21332E00A5A34B /* StoriesAPIIntegrationTests.m */; };
 		78A6E3CB1E21468700A5A34B /* StoriesWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3CA1E21468700A5A34B /* StoriesWorker.m */; };
 		78A6E3CC1E21468700A5A34B /* StoriesWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3CA1E21468700A5A34B /* StoriesWorker.m */; };
 		78A6E3DE1E21584F00A5A34B /* StoriesAPIUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3DD1E21584F00A5A34B /* StoriesAPIUtilsTests.m */; };
-		78A6E3E11E215CC400A5A34B /* StoriesWorkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E3E01E215CC400A5A34B /* StoriesWorkerTests.m */; };
 		78A6E3EB1E2170E700A5A34B /* ListStoriesCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A6E3E81E2170E700A5A34B /* ListStoriesCellViewController.xib */; };
 		78A6E3EC1E2170E700A5A34B /* ListStoriesCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A6E3E81E2170E700A5A34B /* ListStoriesCellViewController.xib */; };
 		78A6E4401E22262900A5A34B /* StoryWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6E43F1E22262900A5A34B /* StoryWorker.m */; };
@@ -65,7 +63,11 @@
 		78C8BF131E1D77680085357B /* ListStoriesInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BF0E1E1D77680085357B /* ListStoriesInteractorTests.m */; };
 		78C8BF151E1D77680085357B /* ListStoriesPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BF0F1E1D77680085357B /* ListStoriesPresenterTests.m */; };
 		78C8BF171E1D77680085357B /* ListStoriesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8BF101E1D77680085357B /* ListStoriesViewControllerTests.m */; };
-		78C8BF1D1E1D912E0085357B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */; };
+		78CDB8EF1E3888E600A689B6 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CDB8ED1E3888E600A689B6 /* AFNetworking.framework */; };
+		78CDB8F01E3888E600A689B6 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78CDB8ED1E3888E600A689B6 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78CDB8F11E3888E600A689B6 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CDB8EE1E3888E600A689B6 /* OCMock.framework */; };
+		78CDB8F21E3888E600A689B6 /* OCMock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78CDB8EE1E3888E600A689B6 /* OCMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78CDB8F51E388C4100A689B6 /* StoriesAPITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CDB8F41E388C4000A689B6 /* StoriesAPITest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,13 +81,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7850D7011E1ADF8C00BEA52D /* Embed Frameworks */ = {
+		78CDB8F31E3888E600A689B6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7850D7001E1ADF8C00BEA52D /* AFNetworking.framework in Embed Frameworks */,
+				78CDB8F21E3888E600A689B6 /* OCMock.framework in Embed Frameworks */,
+				78CDB8F01E3888E600A689B6 /* AFNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +116,6 @@
 		78151FFF1E224C88007DF1AD /* ListStoriesCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellViewController.h; path = Scenes/ListStoriesCell/ListStoriesCellViewController.h; sourceTree = "<group>"; };
 		781520001E224C88007DF1AD /* ListStoriesCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesCellViewController.m; path = Scenes/ListStoriesCell/ListStoriesCellViewController.m; sourceTree = "<group>"; };
 		781520011E224C88007DF1AD /* ListStoriesCellViewControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListStoriesCellViewControllerInterface.h; path = Scenes/ListStoriesCell/ListStoriesCellViewControllerInterface.h; sourceTree = "<group>"; };
-		781520221E229297007DF1AD /* JSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONModel.framework; path = Carthage/Build/iOS/JSONModel.framework; sourceTree = "<group>"; };
 		7815202F1E2361AD007DF1AD /* StoriesModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriesModelTests.m; path = Models/StoriesModelTests.m; sourceTree = "<group>"; };
 		781520321E23621F007DF1AD /* StoriesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesModel.h; sourceTree = "<group>"; };
 		781520331E23621F007DF1AD /* StoriesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesModel.m; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		781520381E236620007DF1AD /* AppTestingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTestingDelegate.h; sourceTree = "<group>"; };
 		781520391E236620007DF1AD /* AppTestingDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTestingDelegate.m; sourceTree = "<group>"; };
 		7815203B1E236A1E007DF1AD /* StoryModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryModelTest.m; path = Models/StoryModelTest.m; sourceTree = "<group>"; };
+		7826840E1E3883B900902E22 /* stories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stories.json; sourceTree = "<group>"; };
 		7850D6551E1A852B00BEA52D /* Stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7850D6591E1A852B00BEA52D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7850D65B1E1A852B00BEA52D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,13 +138,11 @@
 		7850D6831E1A85F700BEA52D /* StoriesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriesAPI.m; path = Services/StoriesAPI.m; sourceTree = "<group>"; };
 		7850D6FA1E1ADB8000BEA52D /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Story.h; path = Models/Story.h; sourceTree = "<group>"; };
 		7850D6FB1E1ADB8000BEA52D /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Story.m; path = Models/Story.m; sourceTree = "<group>"; };
-		7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		78A6E3C01E21332E00A5A34B /* StoriesAPIIntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesAPIIntegrationTests.m; sourceTree = "<group>"; };
 		78A6E3C91E21468700A5A34B /* StoriesWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoriesWorker.h; path = Workers/StoriesWorker.h; sourceTree = "<group>"; };
 		78A6E3CA1E21468700A5A34B /* StoriesWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoriesWorker.m; path = Workers/StoriesWorker.m; sourceTree = "<group>"; };
 		78A6E3CD1E2147AF00A5A34B /* StoriesProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StoriesProtocol.h; path = Workers/StoriesProtocol.h; sourceTree = "<group>"; };
 		78A6E3DD1E21584F00A5A34B /* StoriesAPIUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesAPIUtilsTests.m; sourceTree = "<group>"; };
-		78A6E3E01E215CC400A5A34B /* StoriesWorkerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesWorkerTests.m; sourceTree = "<group>"; };
 		78A6E3E81E2170E700A5A34B /* ListStoriesCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListStoriesCellViewController.xib; path = Cells/ListStoriesCellViewController.xib; sourceTree = "<group>"; };
 		78A6E43E1E22262900A5A34B /* StoryWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryWorker.h; path = Workers/StoryWorker.h; sourceTree = "<group>"; };
 		78A6E43F1E22262900A5A34B /* StoryWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryWorker.m; path = Workers/StoryWorker.m; sourceTree = "<group>"; };
@@ -171,6 +172,9 @@
 		78C8BF0E1E1D77680085357B /* ListStoriesInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesInteractorTests.m; path = Scenes/ListStories/ListStoriesInteractorTests.m; sourceTree = "<group>"; };
 		78C8BF0F1E1D77680085357B /* ListStoriesPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesPresenterTests.m; path = Scenes/ListStories/ListStoriesPresenterTests.m; sourceTree = "<group>"; };
 		78C8BF101E1D77680085357B /* ListStoriesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListStoriesViewControllerTests.m; path = Scenes/ListStories/ListStoriesViewControllerTests.m; sourceTree = "<group>"; };
+		78CDB8ED1E3888E600A689B6 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		78CDB8EE1E3888E600A689B6 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
+		78CDB8F41E388C4000A689B6 /* StoriesAPITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesAPITest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +182,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7850D6FF1E1ADF8C00BEA52D /* AFNetworking.framework in Frameworks */,
+				78CDB8F11E3888E600A689B6 /* OCMock.framework in Frameworks */,
+				78CDB8EF1E3888E600A689B6 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +191,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C8BF1D1E1D912E0085357B /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +236,14 @@
 			);
 			name = Models;
 			path = Services/Models;
+			sourceTree = "<group>";
+		};
+		7826840D1E3883AC00902E22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7826840E1E3883B900902E22 /* stories.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7850D64C1E1A852B00BEA52D = {
@@ -284,11 +296,11 @@
 		7850D6711E1A852B00BEA52D /* StoriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				7826840D1E3883AC00902E22 /* Resources */,
 				7815202D1E236161007DF1AD /* Models */,
 				78A6E3DF1E215BBE00A5A34B /* StoriesAPI */,
 				78C8BEFF1E1D76C90085357B /* Scenes */,
 				7850D6741E1A852B00BEA52D /* Info.plist */,
-				78A6E3E01E215CC400A5A34B /* StoriesWorkerTests.m */,
 			);
 			path = StoriesTests;
 			sourceTree = "<group>";
@@ -318,8 +330,8 @@
 		7850D7021E1ADF9E00BEA52D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				781520221E229297007DF1AD /* JSONModel.framework */,
-				7850D6FE1E1ADF8C00BEA52D /* AFNetworking.framework */,
+				78CDB8ED1E3888E600A689B6 /* AFNetworking.framework */,
+				78CDB8EE1E3888E600A689B6 /* OCMock.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,6 +350,7 @@
 			children = (
 				78A6E3C01E21332E00A5A34B /* StoriesAPIIntegrationTests.m */,
 				78A6E3DD1E21584F00A5A34B /* StoriesAPIUtilsTests.m */,
+				78CDB8F41E388C4000A689B6 /* StoriesAPITest.m */,
 			);
 			name = StoriesAPI;
 			sourceTree = "<group>";
@@ -448,7 +461,7 @@
 				7850D6511E1A852B00BEA52D /* Sources */,
 				7850D6521E1A852B00BEA52D /* Frameworks */,
 				7850D6531E1A852B00BEA52D /* Resources */,
-				7850D7011E1ADF8C00BEA52D /* Embed Frameworks */,
+				78CDB8F31E3888E600A689B6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -535,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A6E3EC1E2170E700A5A34B /* ListStoriesCellViewController.xib in Resources */,
+				7826840F1E3883B900902E22 /* stories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +588,6 @@
 			files = (
 				7815203A1E236620007DF1AD /* AppTestingDelegate.m in Sources */,
 				781520091E224C88007DF1AD /* ListStoriesCellModels.m in Sources */,
-				78A6E3E11E215CC400A5A34B /* StoriesWorkerTests.m in Sources */,
 				78C8BEFA1E1D76BD0085357B /* ListStoriesViewController+Routing.m in Sources */,
 				780D19E81E24433F000DC201 /* ListStoriesPresenterSpy.m in Sources */,
 				781520351E23621F007DF1AD /* StoriesModel.m in Sources */,
@@ -594,6 +607,7 @@
 				781520071E224C88007DF1AD /* ListStoriesCellInteractor.m in Sources */,
 				7815200B1E224C88007DF1AD /* ListStoriesCellPresenter.m in Sources */,
 				78A6E4481E2229F500A5A34B /* StoryAPI.m in Sources */,
+				78CDB8F51E388C4100A689B6 /* StoriesAPITest.m in Sources */,
 				78C8BF151E1D77680085357B /* ListStoriesPresenterTests.m in Sources */,
 				7850D6851E1A85F800BEA52D /* StoriesAPI.m in Sources */,
 				78C8BEF81E1D76BD0085357B /* ListStoriesRouter.m in Sources */,

@@ -19,10 +19,9 @@
     if (block) {
         @try
         {
-            [self.stories fetchStoriesWithCompletionBlock:^(NSDictionary *responseDictionary, NSError *error) {
-                if ((error == nil) && (responseDictionary)) {
-                    id storyList = [self.stories storiesFromDictionary:responseDictionary];
-                    block(storyList);
+            [self.stories fetchStoriesWithCompletionBlock:^(NSArray<StoryModelProtocol> * stories, NSError *error) {
+                if ((error == nil) && (stories)) {
+                    block(stories);
                 }
             }];
         }

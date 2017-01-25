@@ -4,12 +4,14 @@
 #import "Story.h"
 #import "StoryModelProtocol.h"
 
+typedef void (^WSFinishedBlockWithStories)(NSArray<StoryModelProtocol>* stories, NSError *error);
 typedef void (^WSFinishedBlockWithDictionary)(NSDictionary *responseDictionary, NSError *error);
 
 @protocol StoriesProtocol
 
-- (void) fetchStoriesWithCompletionBlock:(WSFinishedBlockWithDictionary) block;
-- (void) fetchStoriesWithUrl:(NSURL*) url
+-(void) fetchStoriesWithCompletionBlock:(WSFinishedBlockWithStories) block;
+- (void) fetchStoriesDictionaryWithCompletionBlock:(WSFinishedBlockWithDictionary) block;
+- (void) fetchStoriesDictionaryWithUrl:(NSURL*) url
                       params:(NSDictionary*) params
              completionBlock:(WSFinishedBlockWithDictionary)block;
 

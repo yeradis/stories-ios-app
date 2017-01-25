@@ -6,7 +6,19 @@ NSString *const kWS_BaseAPI_Key = @"7e1c8b9d6e274c9aa6462466a1c77720";
 
 @implementation StoriesAPI
 
-- (void) fetchStoriesWithUrl:(NSURL*) url params:(NSDictionary*) params completionBlock:(WSFinishedBlockWithDictionary)block {
+-(void) fetchStoriesWithCompletionBlock:(WSFinishedBlockWithStories)block {
+    if (block) {
+        [self fetchStoriesDictionaryWithCompletionBlock:^(NSDictionary *responseDictionary, NSError *error) {
+            NSArray<StoryModelProtocol>* stories = nil;
+            if (responseDictionary) {
+                stories = [self storiesFromDictionary:responseDictionary];
+            }
+            block(stories,error);
+        }];
+    }
+}
+
+-(void) fetchStoriesDictionaryWithUrl:(NSURL *)url params:(NSDictionary *)params completionBlock:(WSFinishedBlockWithDictionary)block {
     if (block){
         NSLog(@"lets fetch some stories from: %@",url.absoluteString);
         if (url == nil) {
@@ -24,14 +36,16 @@ NSString *const kWS_BaseAPI_Key = @"7e1c8b9d6e274c9aa6462466a1c77720";
              } failure:^(NSURLSessionTask *operation, NSError *error) {
                  block(nil,error);
              }];
-
+        
     }
+
 }
-- (void) fetchStoriesWithCompletionBlock:(WSFinishedBlockWithDictionary)block {
+
+- (void) fetchStoriesDictionaryWithCompletionBlock:(WSFinishedBlockWithDictionary)block {
     if (block) {
         NSURL *url = [NSURL URLWithString:kWS_BaseURL];
         NSDictionary *params = @{@"api-key":kWS_BaseAPI_Key};
-        [self fetchStoriesWithUrl:url params:params completionBlock:^(NSDictionary *responseDictionary, NSError *error) {
+        [self fetchStoriesDictionaryWithUrl:url params:params completionBlock:^(NSDictionary *responseDictionary, NSError *error) {
             block(responseDictionary,error);
         }];
     }

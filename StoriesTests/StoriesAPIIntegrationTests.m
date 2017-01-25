@@ -15,16 +15,16 @@
     [super tearDown];
 }
 
-- (void)test_fetchStoriesWithUrl_HavingNilParams_ShouldNoThrow {
+- (void)test_fetchStoriesDictionaryWithUrl_HavingNilParams_ShouldNoThrow {
     StoriesAPI* api = [[StoriesAPI alloc] init];
-    XCTAssertNoThrow([api fetchStoriesWithUrl:nil params:nil completionBlock:nil]);
+    XCTAssertNoThrow([api fetchStoriesDictionaryWithUrl:nil params:nil completionBlock:nil]);
 }
 
-- (void)test_integration_fetchStoriesWithCompletionBlock_ShouldReturnSomething {
+- (void)test_integration_fetchStoriesDictionaryWithCompletionBlock_ShouldReturnSomething {
     XCTestExpectation *expectation1 = [self expectationWithDescription:@"expectation"];
     
     StoriesAPI* api = [[StoriesAPI alloc] init];
-    [api fetchStoriesWithCompletionBlock:^(NSDictionary *responseDictionary, NSError *error) {
+    [api fetchStoriesDictionaryWithCompletionBlock:^(NSDictionary *responseDictionary, NSError *error) {
         [expectation1 fulfill];
         XCTAssertNotNil(responseDictionary);
     }];
@@ -32,11 +32,11 @@
     [self waitForExpectationsWithTimeout:15 handler:nil];
 }
 
-- (void)test_integration_fetchStoriesWithCompletionBlock_ShouldReturnSomeResults {
+- (void)test_integration_fetchStoriesDictionaryWithCompletionBlock_ShouldReturnSomeResults {
     XCTestExpectation *expectation1 = [self expectationWithDescription:@"expectation"];
     
     StoriesAPI* api = [[StoriesAPI alloc] init];
-    [api fetchStoriesWithCompletionBlock:^(NSDictionary *responseDictionary, NSError *error) {
+    [api fetchStoriesDictionaryWithCompletionBlock:^(NSDictionary *responseDictionary, NSError *error) {
         [expectation1 fulfill];
         XCTAssertNotNil(responseDictionary);
         XCTAssertGreaterThan([responseDictionary[@"num_results"] integerValue], 0);
