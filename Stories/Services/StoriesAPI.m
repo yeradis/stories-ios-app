@@ -2,7 +2,7 @@
 #import <AFNetworking/AFNetworking.h>
 
 NSString *const kWS_BaseURL = @"https://api.nytimes.com/svc/topstories/v2/home.json";
-NSString *const kWS_BaseAPI_Key = @"7e1c8b9d6e274c9aa6462466a1c77720";
+NSString *const kWS_BaseAPI_Key = @"GwCOGpRYu2klbGLGXMFjGxGbH7GnfAX7";
 
 @implementation StoriesAPI
 

@@ -1,5 +1,6 @@
 #import "StoryAPI.h"
-#import <AFNetworking/AFNetworking.h>
+@import AFNetworking;
+@import AFNetworking.AFImageDownloader;
 
 @implementation StoryAPI
 
